@@ -26,7 +26,7 @@ const Login = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                 <Link href="/dashboard" >
-                    <a>Go check KPI's</a>
+                    <a>Go check KPIs</a>
                 </Link>
                 </Grid>
             </Grid>
