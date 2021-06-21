@@ -25,18 +25,17 @@ const KpiCard = (props: IProps) => {
                 boxShadow: '8px 8px 0 2px #c0c0c0',
             }}>
                 <CardContent>
-
-                    <Typography variant='h4' component='h1' style={{ color: '#556cd6' }} >
+                    <Typography variant='h6' component='h1' style={{ color: '#556cd6' }} >
                         {props.data.name}
                     </Typography>
                 </CardContent>
                 <CardContent>
-                    <Typography variant='h4' component='h1' style={{ color: '#556cd6' }} >
+                    <Typography variant='h6' component='h1' style={{ color: '#556cd6' }} >
                         {props.data.value}
                     </Typography>
                 </CardContent>
                 <CardContent>
-                    <Typography variant='h4' component='h1' style={{ color: '#556cd6' }} >
+                    <Typography variant='h6' component='h1' style={{ color: '#556cd6' }} >
                         {props.data.lastValue} Last Period
                     </Typography>
 
