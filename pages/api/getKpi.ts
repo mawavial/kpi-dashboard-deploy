@@ -12,6 +12,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+
     const db = await connectToDatabase(process.env.URI_DB ? process.env.URI_DB :  '');
     const collection = db.collection('kpi')
     
