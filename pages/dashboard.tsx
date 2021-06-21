@@ -4,6 +4,8 @@ import React from "react"
 import homeStyle from '../styles/Home.module.css'
 import Filter from '../components/filter'
 import Kpis from "../components/kpis"
+import Link from 'next/link';
+import Toolbar from "../components/toolbar"
 
 const Dashboard = () => {
     return (
@@ -22,7 +24,9 @@ const Dashboard = () => {
                 style={{marginTop: 30}}
             >
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <Filter />
+                    <Toolbar />
+                </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{marginTop:20}} >
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Kpis />

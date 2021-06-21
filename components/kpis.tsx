@@ -23,18 +23,18 @@ const Kpis = () => {
                 md={12}
                 lg={12}
                 xl={12}
-                justify='flex-start'
-                alignItems='flex-start'
+                justify='center'
+                alignItems='center'
                 direction='row'
                 style={{ marginTop: 30 }}
             >
-                <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
+                <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{marginTop: 20}}>
                 <KpiCard data={test[0]} />
                 </Grid>
-                <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
+                <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{marginTop: 20}}>
                 <KpiCard data={test[1]}/>
                 </Grid>
-                <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
+                <Grid item xs={12} sm={12} md={4} lg={4} xl={4} style={{marginTop: 20}}>
                 <KpiCard data={test[2]}/>
                 </Grid>
             </Grid>
