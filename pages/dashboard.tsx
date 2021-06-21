@@ -10,7 +10,7 @@ import { IKpi } from "../interfaces/IKpi"
 import CompanyList from "../components/companyList"
 
 export async function getServerSideProps(context: any) {
-    const res = await fetch(`${process.env.URL}/api/getKpi`)
+    const res = await fetch(`https://kpi-dashboard.vercel.app/api/getKpi`)
     const data = await res.json()
   
     if (!data) {
