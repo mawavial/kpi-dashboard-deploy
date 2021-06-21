@@ -47,7 +47,7 @@ useEffect(() => {
       <Grid item xs={9} sm={9} md={9} lg={9} xl={9} />
       <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
           <Select
-            variant='outlined'
+            variant='filled'
             displayEmpty
             value={filterModel}
             onChange={(event:any) => {
@@ -56,16 +56,17 @@ useEffect(() => {
                 value = ''
               setFilterModel(value)
             }}
+            style={{backgroundColor:'#ffffff'}}
           >
             <MenuItem disabled key='empty' value=''>
-              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold' }}>Filter by timespan</em>
+              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10 }}>Filter by timespan</em>
             </MenuItem>
             <MenuItem key='none' value='None'>
-              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold' }}>None</em>
+              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>None</em>
             </MenuItem>
             {filterConstant?.map((state: ITimespan, index: number) => (
               <MenuItem key={index} value={state.text}>
-                <em style={{ textTransform: 'capitalize', color: '#4907a0', fontSize: 16 }}>{state.text}</em>
+                <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>{state.text}</em>
               </MenuItem>
             ))}
           </Select>
