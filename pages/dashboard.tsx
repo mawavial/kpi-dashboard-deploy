@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setKpi } from "../store/reducers/kpiReducer"
 import { IKpi } from "../interfaces/IKpi"
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
     const res = await fetch(`${process.env.URL}/api/getKpi`)
     const data = await res.json()
   
