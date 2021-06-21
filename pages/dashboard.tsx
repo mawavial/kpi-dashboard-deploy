@@ -3,11 +3,11 @@ import Grid from "@material-ui/core/Grid"
 import React from "react"
 import homeStyle from '../styles/Home.module.css'
 import Filter from '../components/filter'
-import KpiCards from "../components/kpiCards"
+import Kpis from "../components/kpis"
 
 const Dashboard = () => {
     return (
-        <Container className={homeStyle.container} style={{}}>
+        <Container className={homeStyle.container} >
             <Grid
                 container
                 item
@@ -21,21 +21,11 @@ const Dashboard = () => {
                 direction='row'
                 style={{marginTop: 30}}
             >
-                <Grid item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={12}
-                    xl={12}>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Filter />
                 </Grid>
-                <Grid item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={12}
-                    xl={12}>
-                    <KpiCards />
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Kpis />
                 </Grid>
             </Grid>
         </Container>
