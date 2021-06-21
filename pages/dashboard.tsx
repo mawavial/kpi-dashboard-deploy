@@ -7,9 +7,10 @@ import Toolbar from "../components/toolbar"
 import { useDispatch } from 'react-redux';
 import { setKpi } from "../store/reducers/kpiReducer"
 import { IKpi } from "../interfaces/IKpi"
+import CompanyList from "../components/companyList"
 
 export async function getServerSideProps(context: any) {
-    const res = await fetch(`${process.env.URL}/api/getKpi`)
+    const res = await fetch(`https://kpi-dashboard.vercel.app/api/getKpi`)
     const data = await res.json()
   
     if (!data) {
@@ -54,6 +55,9 @@ const Dashboard = (props: any) => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Kpis kpis={[...props.result] as IKpi[]}/>
+                </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{marginTop: 150}}>
+                    <CompanyList />
                 </Grid>
             </Grid>
         </Container>
