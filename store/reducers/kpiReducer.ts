@@ -7,7 +7,7 @@ export enum kpiReducerEnum {
     ADD = 'ADD'
 }
 
-const initialState: any = {}
+const initialState: IKpi[] = [] as IKpi[]
 
 
 

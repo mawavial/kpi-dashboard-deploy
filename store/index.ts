@@ -1,5 +1,6 @@
 import { Reducer } from 'react';
-import { combineReducers, store } from 'redux';
+import { combineReducers } from 'redux';
+import kpiReducer from './reducers/kpiReducer';
 
 
 export interface IState {
@@ -10,4 +11,3 @@ export interface IState {
 export default combineReducers<IState> ({
     kpiReducer
 })
-

@@ -1,5 +1,5 @@
 export default interface IKpiData {
     name: string;
-    value: number;
-    lastValue: number;
+    value?: number;
+    lastValue?: number;
 }
