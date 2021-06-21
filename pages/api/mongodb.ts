@@ -14,7 +14,8 @@ export default async function connectToDatabase(uri: string) {
             useUnifiedTopology: true 
         })
     
-        const dbName = url.parse(uri).pathname.substr(1)
+        // const dbName = url.parse(uri === null ? uri : '').pathname.substr(1)
+        const dbName = process.env.DB_NAME ? process.env.DB_NAME : ''
         const db = client.db(dbName)
     
         cachedDB = db
