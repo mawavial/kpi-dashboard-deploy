@@ -66,7 +66,7 @@ useEffect(() => {
             </MenuItem>
             {filterConstant?.map((state: ITimespan, index: number) => (
               <MenuItem key={index} value={state.text}>
-                <em style={{ color: '#556cd6', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>{state.text}</em>
+                <em style={{ textTransform: 'capitalize', color: '#556cd6', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>{state.text}</em>
               </MenuItem>
             ))}
           </Select>

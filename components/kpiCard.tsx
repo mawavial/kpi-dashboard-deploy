@@ -21,16 +21,15 @@ const KpiCard = (props: IProps) => {
                 border: '2px solid #4907a0',
                 borderRadius: 20,
                 backgroundColor: '#fff',
-                alignItems: 'center',
                 boxShadow: '8px 8px 0 2px #c0c0c0',
             }}>
                 <CardContent>
-                    <Typography variant='h6' component='h1' style={{ color: '#556cd6' }} >
+                    <Typography variant='h4' component='h1' style={{ color: '#556cd6' }} >
                         {props.data.name}
                     </Typography>
                 </CardContent>
                 <CardContent>
-                    <Typography variant='h6' component='h1' style={{ color: '#556cd6' }} >
+                    <Typography variant='h3' component='h1' style={{ color: '#556cd6', marginLeft:50 }} >
                         {props.data.value}
                     </Typography>
                 </CardContent>
