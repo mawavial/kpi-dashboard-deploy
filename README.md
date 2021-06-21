@@ -1,5 +1,5 @@
-## Hello
-This is a simple dashboard using materialUI and nextjs.
+## About the project
+This is a simple dashboard using materialUI and nextjs using typescript.
 Nextjs is a server side rendering framework for react.
 
 
@@ -37,7 +37,7 @@ npm run dev
 
 ## Deployed on Vercel
 
-Since the project was built using nextJS a demo of the "production" version of the
-app can be accessed here:
+Since the project was built using nextJS a live demo of the main version of the
+app can be accessed here on verce:
 
-[live version](https://kpi-dashboard-dzjpt1z8k-mawavial.vercel.app/dashboard "Live Version")
+[Live Version](https://kpi-dashboard-dzjpt1z8k-mawavial.vercel.app/dashboard "Live Version")

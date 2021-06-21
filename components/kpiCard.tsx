@@ -3,8 +3,14 @@ import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import Container from "@material-ui/core/Container";
 import React from "react"
+import IKpiData from "../interfaces/IKpiData";
 
-const KpiCard = () => {
+
+interface IProps { 
+    data: IKpiData;
+}
+
+const KpiCard = (props:IProps) => {
 
     //call reducer and get kpi
 
@@ -14,13 +20,13 @@ const KpiCard = () => {
         <Container>
             <Card style={{backgroundColor: '#b5bcff' }}>
                 <CardContent>
-                    Active sourcing
+                    {props.data.name}
                 </CardContent>
                 <CardContent>
-                    20
+                    {props.data.value}
                 </CardContent>
                 <CardContent>
-                    34 Last Period
+                    {props.data.lastValue} Last Period
                 </CardContent>
             </Card>
         </Container>
