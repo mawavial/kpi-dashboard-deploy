@@ -4,6 +4,18 @@ import React from "react"
 import homeStyle from '../styles/Home.module.css'
 import Kpis from "../components/kpis"
 import Toolbar from "../components/toolbar"
+import useSWR from 'swr'
+
+
+
+// export async function getServerSideProps(context){ 
+//     const res = await fetch('http://0.0.0.127:3000/api/getKpi')
+
+//     // console.log('%c%s', 'color: #00bf00', res.json());
+//     console.log('%c%s', 'color: #00bf00', JSON.stringify(res));
+// }
+
+
 
 const Dashboard = () => {
     return (

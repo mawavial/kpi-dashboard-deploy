@@ -6,8 +6,6 @@ import Login from '../components/login'
 export default function Home() {
 
 
-  console.log('%c%s', 'color: #733d00', process.env.CARPATIO);
-  
   return (
     <>
     <div>

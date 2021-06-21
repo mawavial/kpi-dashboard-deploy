@@ -12,6 +12,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+
+    console.log('%c%s', 'color: #ffa640', process.env.URI_DB);
     const db = await connectToDatabase(process.env.URI_DB ? process.env.URI_DB :  '');
     const collection = db.collection('kpi')
     
