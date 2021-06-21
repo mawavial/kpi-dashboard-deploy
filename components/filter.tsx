@@ -59,14 +59,14 @@ useEffect(() => {
             style={{backgroundColor:'#ffffff'}}
           >
             <MenuItem disabled key='empty' value=''>
-              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10 }}>Filter by timespan</em>
+              <em style={{ color: '#556cd6', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10 }}>Filter by timespan</em>
             </MenuItem>
             <MenuItem key='none' value='None'>
-              <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>None</em>
+              <em style={{ color: '#556cd6', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>None</em>
             </MenuItem>
             {filterConstant?.map((state: ITimespan, index: number) => (
               <MenuItem key={index} value={state.text}>
-                <em style={{ color: '#4907a0', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>{state.text}</em>
+                <em style={{ color: '#556cd6', fontSize: 16, fontWeight: 'bold', marginLeft:10, marginRight: 10  }}>{state.text}</em>
               </MenuItem>
             ))}
           </Select>

@@ -2,9 +2,7 @@ import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
 import React from "react"
 import homeStyle from '../styles/Home.module.css'
-import Filter from '../components/filter'
 import Kpis from "../components/kpis"
-import Link from 'next/link';
 import Toolbar from "../components/toolbar"
 
 const Dashboard = () => {
