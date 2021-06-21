@@ -40,4 +40,4 @@ npm run dev
 Since the project was built using nextJS a live demo of the main version of the
 app can be accessed here on verce:
 
-[Live Version](https://kpi-dashboard-dzjpt1z8k-mawavial.vercel.app/dashboard "Live Version")
+[Live Version](https://kpi-dashboard.vercel.app/ "Live Version")
