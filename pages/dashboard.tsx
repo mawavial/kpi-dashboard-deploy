@@ -1,15 +1,14 @@
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
-import React from "react"
+import React, { useEffect } from "react"
 import homeStyle from '../styles/Home.module.css'
 import Kpis from "../components/kpis"
 import Toolbar from "../components/toolbar"
-import useSWR from 'swr'
+import { useDispatch } from 'react-redux';
 
-
-
+//
 // export async function getServerSideProps(context){ 
-//     const res = await fetch('http://0.0.0.127:3000/api/getKpi')
+//     const res = await fetch('api/getKpi')
 
 //     // console.log('%c%s', 'color: #00bf00', res.json());
 //     console.log('%c%s', 'color: #00bf00', JSON.stringify(res));
@@ -18,6 +17,16 @@ import useSWR from 'swr'
 
 
 const Dashboard = () => {
+
+    const dispatch = useDispatch();
+    let initialize = async () => { 
+        const res = await fetch('api/getKpi');
+
+    }
+
+    useEffect(() => { 
+        initialize()
+    }, [])
     return (
         <Container className={homeStyle.container} >
             <Grid
